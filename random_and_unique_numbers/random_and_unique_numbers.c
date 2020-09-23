@@ -13,7 +13,7 @@ int ** create_matrix_with_unique_random_numbers(int rows,int columns,int lower_b
     // for example we can have a range of random numbers between 0-10 and user request a matrix in size of 10 rows and 10 columns.
     // we cannot provide such matrix because there are not enough unique random numbers that exist!
     if((rows*columns ) > (higher_bound-lower_bound)) {
-        printf("ERROR:cannot create matrix of %d rows and %d columns such that all elements are random and unique.\n",rows,columns);
+        printf("ERROR:cannot create matrix of %d rows and %d columns such that all elements are random and unique in the given range %d <--> %d.\n",rows,columns,lower_bound,higher_bound);
         return NULL;
     }
     // create a list with all the possible numbers from lower_bound to higher_bound
