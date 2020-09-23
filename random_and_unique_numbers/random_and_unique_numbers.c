@@ -91,7 +91,7 @@ void main() {
     printf("Enter higher-bound:");
     scanf("%d",&h_bound);
     }
-    while(h_bound<l_bound || h_bound==l_bound || h_bound<0 || l_bound<0);
+    while(h_bound<=l_bound|| h_bound<0 || l_bound<0);
     do {
     printf("Enter rows-size for matrix:");
     scanf("%d",&rows);
