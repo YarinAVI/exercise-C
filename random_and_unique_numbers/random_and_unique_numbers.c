@@ -2,7 +2,7 @@
  * @Author: Yarin Avisidris 
  * @Date: 2020-09-23 22:14:01 
  * @Last Modified by: Yarin Avisidris
- * @Last Modified time: 2020-09-23 23:19:44
+ * @Last Modified time: 2020-09-24 12:33:21
  */
 
 #include<stdlib.h> // malloc
@@ -91,7 +91,7 @@ void main() {
     printf("Enter higher-bound:");
     scanf("%d",&h_bound);
     }
-    while(h_bound<=l_bound|| h_bound<0 || l_bound<0);
+    while(h_bound<=l_bound);
     do {
     printf("Enter rows-size for matrix:");
     scanf("%d",&rows);
