@@ -1,13 +1,13 @@
 /*
  * @Author: Yarin Avisidris 
  * @Date: 2020-09-24 15:56:18 
- * @Last Modified by:   Yarin Avisidris 
- * @Last Modified time: 2020-09-24 15:56:18 
+ * @Last Modified by: Yarin Avisidris
+ * @Last Modified time: 2020-09-24 16:00:37
  */
 #include<stdio.h>
 #include<string.h> // strstr()
 
-int missing_numbers(char *str1,char *str2) {
+int missing_words(char *str1,char *str2) {
 // set nulls in str1 so we can split them by words using strstr;
 int str1_size = strlen(str1);
 int result = 0;
@@ -30,6 +30,6 @@ int main () {
     char str2[100] = "each course has a set of goals to achieve and a set of tools to use";
     printf("String1 = %s\n",str1);
     printf("string2 = %s\n",str2);
-    printf("There were %d words in str1 that don't exist in str2\n",missing_numbers(str1,str2));
+    printf("There were %d words in str1 that don't exist in str2\n",missing_words(str1,str2));
 
 }
