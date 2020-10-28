@@ -53,7 +53,7 @@ int main() {
     head->next->next->next->next = (struct list_node*)calloc(1,sizeof(struct list_node));
     head->next->next->next->next->val = 6;
     head->next->next->next->next->next = (struct list_node*)calloc(1,sizeof(struct list_node));
-    head->next->next->next->next->next->val = 6;
+    head->next->next->next->next->next->val = 7;
     struct sizes * ret =rm_odd(&head);
     printf("%d\n",ret->original_size);
     printf("%d\n",ret->size_after_remove);
