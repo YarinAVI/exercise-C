@@ -7,6 +7,7 @@ void file_write(char *file_name ,char *text[100] , int text_size) {
     char counter = 'a';
     fp = fopen(file_name,"w");
     for(int i=0;i<text_size;i++) {
+        if(text[i][0] >='0' && text[i][0] <='9') continue;
         fprintf(fp,"%c.%s\n",counter++,text[i]);
     }
 }

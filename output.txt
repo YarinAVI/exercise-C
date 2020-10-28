@@ -1,4 +1,3 @@
 a.Gooli 31, Bat Yam
-b.22 Slomo
-c.Levi
-d.Shosh
+b.Levi
+c.Shosh
