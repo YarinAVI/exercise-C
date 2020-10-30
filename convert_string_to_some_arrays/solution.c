@@ -10,16 +10,19 @@ struct return_size * convert(char *input,int **a,int **b,char **c) {
     struct return_size * result = (struct return_size *)calloc(1,sizeof(struct return_size));
 
     while(*input) {
+        
         if( (*input)>='A' && (*input) <='z') {
             result->size1++;
             (*a) = (int*)realloc((*a),result->size1 * sizeof(int));
             (*a)[result->size1-1] = (*input);
         }
+
         else if((*input) >='0' && (*input) <='9') {
             result->size2++;
             (*b) = (int*)realloc((*b),result->size2 * sizeof(int));
             (*b)[result->size2-1] = (*input) - '0';
         }
+
         else {
             result->size3++;
             (*c) = (char*)realloc((*c),result->size3*sizeof(char));
