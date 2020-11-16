@@ -81,8 +81,10 @@ void main() {
     int h_bound;
     // we want randoms between 0(including) to 100 (excluding)
     // Use current time as  
-    // seed for random generator 
+    // seed for random generator
+    
     srand(time(0));
+    while (1) { 
     int rows;
     int columns;
     do {
@@ -106,7 +108,6 @@ void main() {
     for(int i=0;i<rows;i++) free(random_and_unique[i]);
     free(random_and_unique);
     random_and_unique= NULL;
+    }
     } 
-
-    
 }

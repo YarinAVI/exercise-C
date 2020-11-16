@@ -12,6 +12,8 @@ int missing_words(char *str1,char *str2) {
 int str1_size = strlen(str1);
 int result = 0;
 for(int i=0;i<str1_size;i++) if(str1[i]==' ') str1[i] = 0;
+
+
 // now words are seperated by NULLs and not by spaces, now its useful for us to use strstr and count matching words.
 int i =0 ;
 while(i<str1_size) {
